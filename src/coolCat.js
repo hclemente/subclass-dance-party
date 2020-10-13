@@ -1,8 +1,8 @@
 var CoolCat = function(top, left, timeBetweenSteps) {
-  Dancer.call(this);
+  MakeDancer.call(this, top, left, timeBetweenSteps);
 };
 
-CoolCat.prototype = Object.create(Dancer.prototype);
+CoolCat.prototype = Object.create(MakeDancer.prototype);
 CoolCat.prototype.constructor = CoolCat;
 
 CoolCat.prototype.step = function() {
