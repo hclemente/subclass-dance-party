@@ -1,8 +1,8 @@
 var DopeDogg = function(top, left, timeBetweenSteps) {
-  Dancer.call(this);
+  MakeDancer.call(this, top, left, timeBetweenSteps);
 };
 
-DopeDogg.prototype = Object.create(Dancer.prototype);
+DopeDogg.prototype = Object.create(MakeDancer.prototype);
 DopeDogg.prototype.constructor = DopeDogg;
 
 DopeDogg.prototype.step = function() {
