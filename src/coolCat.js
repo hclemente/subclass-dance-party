@@ -13,4 +13,4 @@ CoolCat.prototype.step = function() {
 
 CoolCat.prototype.lineup = function(top, left) {
   this.setPosition(top, left);
-}
+};
