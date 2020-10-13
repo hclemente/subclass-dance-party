@@ -8,7 +8,6 @@ DopeDogg.prototype.constructor = DopeDogg;
 
 DopeDogg.prototype.step = function() {
   MakeDancer.prototype.step.call(this);
-  this.$node.toggle();
 };
 
 DopeDogg.prototype.lineup = function(top, left) {

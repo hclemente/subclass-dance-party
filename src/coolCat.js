@@ -8,7 +8,6 @@ CoolCat.prototype.constructor = CoolCat;
 
 CoolCat.prototype.step = function() {
   MakeDancer.prototype.step.call(this);
-  this.$node.toggle();
 };
 
 CoolCat.prototype.lineup = function(top, left) {
