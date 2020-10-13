@@ -9,7 +9,7 @@ $(document).ready(function() {
     // iterates overs dancers array and calls lineup method on each one
     for (var i = 0; i < window.dancers.length; i++) {
       window.dancers[i].lineup(top, left);
-      left += $('body').width / window.dancers.length;
+      left+= $('window').width / window.dancers.length;
     }
   });
 
