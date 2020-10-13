@@ -9,18 +9,18 @@ describe('coolCat', function() {
   });
 
   it('should have a jQuery $node object', function() {
-    expect(blinkyDancer.$node).to.be.an.instanceof(jQuery);
+    expect(coolCat.$node).to.be.an.instanceof(jQuery);
   });
 
   describe('dance', function() {
     it('should call step at least once per second', function() {
-      sinon.spy(blinkyDancer, 'step');
-      expect(blinkyDancer.step.callCount).to.be.equal(0);
+      sinon.spy(coolCat, 'step');
+      expect(coolCat.step.callCount).to.be.equal(0);
       clock.tick(timeBetweenSteps);
       clock.tick(timeBetweenSteps);
-      expect(blinkyDancer.step.callCount).to.be.equal(1);
+      expect(coolCat.step.callCount).to.be.equal(1);
       clock.tick(timeBetweenSteps);
-      expect(blinkyDancer.step.callCount).to.be.equal(2);
+      expect(coolCat.step.callCount).to.be.equal(2);
     });
   });
 });
