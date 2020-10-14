@@ -27,6 +27,9 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.dancer:mouseover{
+  transform: scale(1.5);
+}
 .coolcat{
   border:solid transparent;
   border-radius:10px;
