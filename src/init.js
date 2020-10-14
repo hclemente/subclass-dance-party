@@ -1,6 +1,25 @@
 $(document).ready(function() {
   window.dancers = [];
 
+
+
+  var splitDancers = function () {
+
+    for (var i = 0; i < window.dancers.length; i++) {
+      if (window.dancers[i] instanceof CoolCat) {
+        window.dancers[i].lineup(window.dancers[i].top, 25);
+      } else if (window.dancers[i] instanceof DopeDogg) {
+        window.dancers[i].lineup(window.dancers[i].top, 1700);
+      } else {
+        window.dancers[i].lineup(0, window.dancers[i].left);
+      }
+    }
+  };
+
+  $('.splitDancers').on('click', function(event) {
+    splitDancers();
+  });
+
   $('.lineUpButton').on('click', function(event) {
     // lines up dancers on a random line
     var top = $('body').height() / 2 * Math.random();

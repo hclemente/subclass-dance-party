@@ -12,6 +12,10 @@ describe('coolCat', function() {
     expect(coolCat.$node).to.be.an.instanceof(jQuery);
   });
 
+  it('should have a mouseover handler', function() {
+    expect(coolCat.$node)
+  })
+
   describe('dance', function() {
     it('should call step at least once per second', function() {
       sinon.spy(coolCat, 'step');
